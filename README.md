@@ -2,6 +2,8 @@
 
 Eye Auto Scroll is a simple tool that leverages Google MediaPipe's Face Landmarker solution to track eye movements in real-time and automatically scroll your screen or add your own eye based commands. With this application, you can adjust how far you have to look down before triggering a scroll, making it perfect if you want to read while enjoying a messy meal.
 
+![Demo](./demo.gif)
+
 ## How It Works
 
 The application uses your webcam to capture live video feed and processes it using MediaPipe’s face landmarker model for real-time facial and eye tracking. When your eye’s "Look Down" score exceeds a set threshold (default is 40%), the program triggers a scroll action using pyautogui. You can adjust the vertical threshold (and thus the sensitivity) using simple keyboard controls.
